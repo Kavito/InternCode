@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-09-2014 10:45:53 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Entity.Student" table="student" catalog="interndb">
+        <id name="studentId" type="java.lang.Integer">
+            <column name="student_id" />
+            <generator class="identity" />
+        </id>
+        <property name="studentName" type="string">
+            <column name="student_name" length="60" />
+        </property>
+        <property name="studentAge" type="string">
+            <column name="student_age" length="2" />
+        </property>
+        <property name="studentAddress" type="string">
+            <column name="student_address" length="60" />
+        </property>
+        <property name="studentPhone" type="string">
+            <column name="student_phone" length="8" />
+        </property>
+        <property name="studentEmail" type="string">
+            <column name="student_email" length="60" />
+        </property>
+        <property name="studentNationality" type="string">
+            <column name="student_nationality" length="45" />
+        </property>
+        <property name="studentEducationLine" type="string">
+            <column name="student_educationLine" length="45" />
+        </property>
+        <property name="studentLanguage" type="string">
+            <column name="student_language" length="45" />
+        </property>
+        <property name="studentInternDate" type="date">
+            <column name="student_internDate" length="10" />
+        </property>
+        <property name="studentExamDate" type="date">
+            <column name="student_examDate" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
