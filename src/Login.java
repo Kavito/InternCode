@@ -29,26 +29,26 @@ public class Login extends JFrame{
     private MouseListener onClear;
     
     public Login(){
-        super("Login");
-        setLayout(new FlowLayout());
-        labelUsername = new JLabel("Username");
-        labelUsername.setToolTipText("Please Input your Username below here. Be aware that it is NOT your email!");
-        fieldUsername = new JTextField("Insert Username her", 20);
-        labelPassword = new JLabel("Password");
-        labelPassword.setToolTipText("Please Input your Password below here. The Password is not readiable for the concernof prying eyes. ");
-        fieldPassword = new JPasswordField("password", 20);
-        buttonLogin = new JButton("Login");
-        
-        add(labelUsername);
-        add(fieldUsername);
-        add(labelPassword);
-        add(fieldPassword);
-        add(buttonLogin);
-        
-        fieldUsername.addFocusListener(new FocusAdapter() 
-        {public void focusGained(FocusEvent e){fieldUsername.setText("");}});
-        fieldPassword.addFocusListener(new FocusAdapter() 
-        {public void focusGained(FocusEvent e){fieldPassword.setText("");}});
+//        super("Login");
+//        setLayout(new FlowLayout());
+//        labelUsername = new JLabel("Username");
+//        labelUsername.setToolTipText("Please Input your Username below here. Be aware that it is NOT your email!");
+//        fieldUsername = new JTextField("Insert Username her", 20);
+//        labelPassword = new JLabel("Password");
+//        labelPassword.setToolTipText("Please Input your Password below here. The Password is not readiable for the concernof prying eyes. ");
+//        fieldPassword = new JPasswordField("password", 20);
+//        buttonLogin = new JButton("Login");
+//        
+//        add(labelUsername);
+//        add(fieldUsername);
+//        add(labelPassword);
+//        add(fieldPassword);
+//        add(buttonLogin);
+//        
+//        fieldUsername.addFocusListener(new FocusAdapter() 
+//        {public void focusGained(FocusEvent e){fieldUsername.setText("");}});
+//        fieldPassword.addFocusListener(new FocusAdapter() 
+//        {public void focusGained(FocusEvent e){fieldPassword.setText("");}});
         
     }
     
