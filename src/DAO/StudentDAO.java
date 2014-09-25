@@ -22,6 +22,9 @@ public class StudentDAO {
     
     public static int insertStudent(Student student)
     {
+                boolean isStudentRegistered = false;
+        String query = ("select student_email from Student where student_email='" + studentEmail + "'");
+        
         String studentName = student.getStudentName();
         String studentAge = student.getStudentAge();
         String studentAddress = student.getStudentAddress();
