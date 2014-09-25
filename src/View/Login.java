@@ -67,7 +67,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Create User");
+        jButton1.setText("Create Student");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -90,7 +90,7 @@ public class Login extends javax.swing.JFrame {
                                     .addComponent(passwordField, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                                     .addComponent(labelPassword)
                                     .addComponent(jLabel1))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 117, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addContainerGap())
         );
