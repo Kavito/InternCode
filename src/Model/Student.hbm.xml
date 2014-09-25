@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 15-09-2014 10:45:53 by Hibernate Tools 3.6.0 -->
+<!-- Generated 25-09-2014 12:03:51 by Hibernate Tools 3.6.0 -->
 <hibernate-mapping>
-    <class name="Entity.Student" table="student" catalog="interndb">
-        <id name="studentId" type="java.lang.Integer">
+    <class name="Model.Student" table="student" catalog="interndb">
+        <id name="studentId" type="int">
             <column name="student_id" />
-            <generator class="identity" />
+            <generator class="assigned" />
         </id>
         <property name="studentName" type="string">
             <column name="student_name" length="60" />
@@ -21,7 +21,7 @@
             <column name="student_phone" length="8" />
         </property>
         <property name="studentEmail" type="string">
-            <column name="student_email" length="60" />
+            <column name="student_email" length="60" unique="true" />
         </property>
         <property name="studentNationality" type="string">
             <column name="student_nationality" length="45" />

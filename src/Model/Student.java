@@ -1,5 +1,5 @@
-package Entity;
-// Generated 15-09-2014 10:45:52 by Hibernate Tools 3.6.0
+package Model;
+// Generated 25-09-2014 12:03:49 by Hibernate Tools 3.6.0
 
 
 import java.util.Date;
@@ -10,7 +10,7 @@ import java.util.Date;
 public class Student  implements java.io.Serializable {
 
 
-     private Integer studentId;
+     private int studentId;
      private String studentName;
      private String studentAge;
      private String studentAddress;
@@ -25,7 +25,12 @@ public class Student  implements java.io.Serializable {
     public Student() {
     }
 
-    public Student(String studentName, String studentAge, String studentAddress, String studentPhone, String studentEmail, String studentNationality, String studentEducationLine, String studentLanguage, Date studentInternDate, Date studentExamDate) {
+	
+    public Student(int studentId) {
+        this.studentId = studentId;
+    }
+    public Student(int studentId, String studentName, String studentAge, String studentAddress, String studentPhone, String studentEmail, String studentNationality, String studentEducationLine, String studentLanguage, Date studentInternDate, Date studentExamDate) {
+       this.studentId = studentId;
        this.studentName = studentName;
        this.studentAge = studentAge;
        this.studentAddress = studentAddress;
@@ -38,11 +43,11 @@ public class Student  implements java.io.Serializable {
        this.studentExamDate = studentExamDate;
     }
    
-    public Integer getStudentId() {
+    public int getStudentId() {
         return this.studentId;
     }
     
-    public void setStudentId(Integer studentId) {
+    public void setStudentId(int studentId) {
         this.studentId = studentId;
     }
     public String getStudentName() {
