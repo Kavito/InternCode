@@ -47,9 +47,6 @@ public class Student  implements java.io.Serializable {
         return this.studentId;
     }
     
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
-    }
     public String getStudentName() {
         return this.studentName;
     }
